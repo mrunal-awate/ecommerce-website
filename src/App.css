@@ -1,38 +1,584 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+body {font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8);}
+
+.bg-blue{background: #233a95;}    /* This is for the background color of covid 19 page */
+
+@media (min-width: 1300px){
+.container, .container-lg, .container-md, .container-sm, .container-xl{
+  max-width: 1200px;                                   
+}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cursor{
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.text-light{
+  color: #8b8b8b !important;
+}
+
+.text-sml{
+  font-size: 14px;
+}
+
+::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #ccc !important;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+
+.headerWrapper{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  /* padding-bottom: 10px; */
+}
+
+
+.headerWrapper .top-strip{
+  padding: 8px 0px;                   /*This is for strip padding*/
+}
+
+.headerWrapper .top-strip{
+  color: #fff;                       /* This is for the text color of the top strip */
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.headerWrapper .header{              /* This is for the header */
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+
+.logoWrapper img{                     /* This is for the logo */
+  width: 100%;
+}
+
+.headerWrapper .header .part2 .countryDrop{
+  width: 170px;
+  height: 60px;                             /* This is for the country dropdown */
+  min-width: 150px;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  border-radius: 7px;
+  padding: 10px 15px !important;
+}
+
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left; 
+  justify-content: flex-start !important;
+}
+
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px !important;                              /* This is for the country dropdown label */
+  text-transform: capitalize !important;
+  color: rgba(0,0,0,0.4) !important;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px !important;
+  text-transform: capitalize !important;                    /* This is for the country dropdown name */
+  color: #233a95 !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+  opacity: 0.7;                                             /* This is for the country dropdown icon */
+}
+
+.headerSearch{
+  width: 60%;
+  height: 60px;                                            /*for search bar */
+  background: #f3f4f7;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.headerSearch input{
+  background: transparent !important;                    /*for search bar input */
+  outline: none;
+  font-size: 15px;
+  color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 45px;
+  border: 0px !important;
+  padding: 0px 20px !important;
+} 
+
+.headerSearch input::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.6);
+}
+
+.headerSearch button{
+  position: absolute;
+  top: 10px;                                           /*for search bar button */
+  right: 10px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  color: #000;
+}
+
+.headerSearch button svg{
+  font-size: 25px;                                    /*for search bar icon */
+  opacity: 0.8;
+}
+
+header .part3 .circle{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 45px !important;                        /*for circle -- user*/
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+header .part3 .circle svg{
+  font-size: 22px;                                  /*for user icon */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartTab .price{
+  font-size: 18px;                                  /*for cart price */
+  color: rgba(0,0,0,0.8);
+  font-weight: 700;
 }
+
+.cartTab button{
+  background: #fff1ee !important;                /*for cart button */
+}
+
+.cartTab button svg{
+  color: #ea2b0f !important;                      /*for cart icon */
+}
+
+.cartTab .count{
+  position: absolute;                                  /*for cart count */
+  top: -6px;
+  right: -4px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.locationModal .MuiPaper-elevation{
+  padding: 25px;                                      /*for location modal */
+  position: relative;
+} 
+
+.locationModal .countryList{
+  margin-bottom: 0px;                                 /*for country list */
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.locationModal .countryList li{
+  width: 100%;
+  list-style: none;                                   /*for country list */
+}
+
+.locationModal .countryList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;                           /*for country list button */
+  justify-content: flex-start !important;
+  padding: 10px 20px !important;
+}
+
+.locationModal .countryList li button:hover{
+  background: #f1f1f1;                                /*for country list button hover */
+}
+
+.locationModal .countryList li button.active{
+  background: #e2e2e2 !important;                        /*for country list button active */
+}
+
+.locationModal .close_{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000 !important;                         /*for close button */
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px;
+  border-radius: 50% !important;
+}
+
+.locationModal .close_ svg{
+  font-size: 22px;
+}
+
+
+nav .navPart1{
+  max-width: 20%;                                      /*for nav bar */
+  flex: 0 0 20%;
+}
+
+nav .navPart2{
+  max-width: 80%;                                      /*for nav bar */
+  flex: 0 0 80%;
+}
+
+nav .navPart1 .catWrapper{                            /*for category wrapper */
+  position: relative;
+}
+
+nav .navPart1 .catWrapper .sidebarNav{                   /*for sidebar nav */
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  background: #fff;
+  position: absolute;
+  top: 137%;
+  left: 0px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 15px 0px;
+  transition: all 0.2s;
+  visibility: hidden;
+  z-index: 100;
+}
+
+nav .navPart1 .catWrapper .sidebarNav.open{
+  height: auto;
+  opacity: 1;                                         /*for sidebar nav open */
+  visibility: inherit;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li{
+  width: 100%;                                            /*for sidebar nav list */
+  list-style: none;
+  padding: 0px 10px;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button{
+  color: #000;                                          /*for sidebar nav button */
+  width: 100%;
+  justify-content: flex-start;
+  text-transform: capitalize !important;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
+  background: transparent !important;                       /*for button*/
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li{                /*for submenu*/
+  position: static;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+  position: absolute;                                       /*for submenu */
+  top: 0px;
+  left: 105%;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
+  opacity: 1;
+  visibility: inherit;
+  /* left: 100%; */
+  /* padding: 20px; */
+  left: 100%;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
+  border-radius: 0px !important;
+}
+
+nav .allCatTab{
+  background: #2bbef9;                                  /*for category tab */
+  padding: 10px 15px !important;
+  border-radius: 30px !important;
+}
+
+nav .allCatTab *{                                       /*for category tab */
+  color: #fff;
+}
+
+nav .allCatTab:hover{
+  background: #2bbef9;                                /*for category tab hover */
+}
+
+nav .allCatTab .text{
+  font-weight: 600;                                    /* for category tab text */
+}                                    
+
+nav .allCatTab .icon1 svg{
+  font-size: 20px !important;                          /* for category tab icon */
+}
+
+nav .allCatTab .icon2 svg{
+  font-size: 15px !important;                         /* for category tab icon */
+}
+
+nav .navPart2 ul{
+  margin-bottom: 0px;                               /* for category tab list */
+}
+
+nav .navPart2 ul li{
+  padding-bottom: 20px;                             /*for category tab list item */
+}
+
+nav .navPart2 ul li a{
+  text-decoration: none;                            /*for decoration of nav part (underline)*/
+}
+
+nav .navPart2 ul li a button{
+  font-size: 14px;                                  /* for category tab list item */
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+nav .navPart2 ul li a svg{
+  font-size: 20px;                                   /* for category tab list item icon */
+}
+
+nav .navPart2 ul li a:hover{
+  background: #f0faff;
+  color: #2bbef9;                                /* for category tab list item hover */
+}
+
+nav .navPart2 ul li{
+  position: relative;                               /*for category tab list item */
+}
+
+nav .navPart2 ul li .submenu{
+  position: absolute;
+  top: 150%;                                        /*for category tab list item submenu */
+  left: 0px;
+  min-width: 200px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+
+nav .navPart2 ul li .submenu a{
+  display: block;                                   /*for category tab list item submenu item */
+  width: 100%;                                    
+}
+
+nav .navPart2 ul li .submenu a button{
+  width: 100%;                                      /*for category tab list item submenu item */
+  justify-content: flex-start !important;
+  border-radius: 0px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+}
+
+nav .navPart2 ul li .submenu a button:hover{
+  background: #f1f1f1 !important;
+}
+
+nav .navPart2 ul li:hover .submenu{                 /*for category tab list item submenu hover */
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
+}
+
+.homeBannerSection{                               /* for home banner section */
+  position: relative;
+  overflow: hidden;
+}
+
+.homeBannerSection *{
+  outline: none !important;
+}
+
+.homeBannerSection .slick-arrow{                   /* for home banner section slick arrow */
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  background: #444444;
+  border-radius: 100%;
+  font-family: FontAwesome !important;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgb(0 0 0/ 12%),  0 1px 2px rgb(0 0 0/24%) !important;
+}
+
+.homeBannerSection .slick-arrow.slick-next{
+  right: 25px !important;
+}
+.homeBannerSection .slick-arrow.slick-prev{
+  left: 25px !important;
+}
+
+.homeBannerSection .slick-arrow.slick-next::before{
+  font-family: FontAwesome !important;
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+.homeBannerSection .slick-arrow.slick-prev::before{
+  font-family: FontAwesome !important;
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+/* .slick-next::before{
+  content: "\f105" !important;
+} */
+
+/* .slick-prev::before{
+  content: "\f104" !important;
+} */
+
+/* .homeBannerSection {
+  cursor: pointer;
+} */
+
+
+.homeProducts{                              /* for home products section */
+  padding: 25px 0px;
+  width: 100%;
+}
+
+.homeProducts .banner{                    /* for home products banner */
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.productRow .hd{                          /* for product row heading */
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.viewAllBtn{                              /* for view all button */
+  padding: 5px 25px !important;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  border-radius: 30px !important;
+  color: #414141 !important;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+
+.viewAllBtn svg{
+  font-size: 20px;
+} 
+
+
+.productItem{                               /* product item */
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.productItem .badge{                        /* for discount section*/
+  display: inline-block;
+  padding: 7px 10px;                        
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.productItem .info{                        /* for product info */
+  padding: 15px; 
+}
+
+.productItem .info h4{                     /* for product name */
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.productItem .info .oldPrice{             /* for old price */
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.2);
+  text-decoration: line-through;
+}
+
+.productItem .info .netPrice{            /* for new price */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.productItem .actions{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 100;
+}
+
+.productItem .actions button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid rgba(0,0,0,0.1) !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgb(0 0 0/ 12%),  0 1px 2px rgb(0 0 0/24%) !important;
+
+}
+
+.product_row .productItem{               /* for product row */
+  border-right: 1px solid transparent !important;
+}
+
+.product_row .swiper-slide:last-child .productItem{         /* for last product in row */
+  border-right: 1px solid rgba(0,0,0,0.1) !important
+}
+
+.swiper{                                /* for swiper container */
+  padding-right: 1px !important;
+}
+
+.badge-primary{                        /* for badge color */
+  background: #2bbef9 !important;
+}
+
