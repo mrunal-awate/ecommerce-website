@@ -14,15 +14,13 @@ const ProductItem = () =>{
                           alt=""
                           className="w-100"
                         ></img>
-
-
                         <span className="badge badge-primary">
                           28%
                         </span>
 
                         <div className="actions">
                           <Button><TfiFullscreen></TfiFullscreen></Button>
-                          <Button><IoMdHeartEmpty></IoMdHeartEmpty></Button>
+                          <Button><IoMdHeartEmpty style={{fontSize: '20px'}}></IoMdHeartEmpty></Button>
                         </div>
                       </div>
 

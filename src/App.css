@@ -488,7 +488,7 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 }
 
 .productRow .hd{                          /* for product row heading */
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -548,8 +548,12 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 .productItem .actions{
   position: absolute;
   top: 20px;
-  right: 10px;
-  z-index: 100;
+  right: -100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .productItem .actions button{
@@ -563,7 +567,39 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   border-radius: 50% !important;
   background: #fff !important;
   box-shadow: 0 1px 3px rgb(0 0 0/ 12%),  0 1px 2px rgb(0 0 0/24%) !important;
+  transition: all 0.3s !important;
+}
 
+.product_row .actions button svg{
+  color: #000 !important;
+  opacity: 0.8;
+  pointer-events: none;
+  font-size: 15px !important;
+}
+
+.productItem .actions button:hover{
+  background: #233a95 !important;
+}
+
+.productItem .actions button:hover svg{
+  color: #fff !important;
+}
+
+.productItem .imgWrapper{
+  overflow: hidden;
+}
+
+.productItem .imgWrapper img{
+  transition: all 0.3s ease-in-out;
+}
+
+.productItem .imgWrapper:hover .actions{
+  opacity: 1;
+  right: 10px;
+}
+
+.productItem .imgWrapper:hover img{
+  transform: scale(1.1);
 }
 
 .product_row .productItem{               /* for product row */
