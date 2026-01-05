@@ -19,11 +19,99 @@ const HomeCat = () => {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <div className="item">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"></img>
-                                <h4>Red Apple</h4>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
+                                alt=""
+                                ></img>
+                                <h6>Red Apple</h6>
                             </div>
                         </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-14.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-15.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png"
+                                alt="">
+                                </img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item text-center">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
+                                alt=""></img>
+                                <h6>Red Apple</h6>
+                            </div>
+                        </SwiperSlide>
+                        
                     </Swiper>
 \            </div>
         </section>
