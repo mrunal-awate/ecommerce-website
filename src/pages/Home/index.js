@@ -11,6 +11,7 @@ import { Navigation } from "swiper/modules";
 import ProductItem from "../../components/ProductItem";
 import HomeCat from "../../components/HomeCat";
 
+
 const Home = () => {
   // var productSliderOptions = {
   //   dots: true,
@@ -119,11 +120,12 @@ const Home = () => {
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={0}
-                  pagination={{
-                    clickable: true,
-                  }}
+                  navigation={true}
+                  slidesPerGroup={3}
                   modules={[Navigation]}
                   className="mySwiper"
+                  
+                  
                   >
                   <SwiperSlide>
                     <ProductItem></ProductItem>
