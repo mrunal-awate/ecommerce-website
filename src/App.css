@@ -634,7 +634,8 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   padding: 15px;
   width: 100%;
   height: auto;
-  background: #feefea;
+  /* background: #feefea; */
+  border-radius: 10px;
 }
 
 .homeCat .swiper .item img{

@@ -1,121 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const HomeCat = () => {
+
+    const [itemBg, setItemBg] = useState([
+        '#fffceb',
+        '#ecffec',
+        '#feefea',
+        '#fff3eb',
+        '#fff3ff',
+        '#f2fce4',
+        '#feefea',
+        '#fffceb',
+        '#feefea',
+        '#ecffec',
+        '#feefea',
+        '#fff3eb',
+        '#fff3ff',
+        '#f2fce4',
+        '#feefea',
+        '#fffceb',
+        '#feefea',
+        '#ecffec'
+    ]);
+
+
+
     return (
 
         <section className="homeCat">
             <div className="container">
 
-\                    <Swiper
-                        slidesPerView={10}
-                        spaceBetween={20}
-                        navigation={true}
-                        slidesPerGroup={1}
-                        modules={[Navigation]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
-                                alt=""
-                                ></img>
-                                <h7>Red Apple</h7>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png"
-                                alt=""></img>
-                                <h7>Snack</h7>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png"
-                                alt=""></img>
-                                <h7>Custard Apple</h7>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png"
-                                alt=""></img>
-                                <h6>Strawberry</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png"
-                                alt=""></img>
-                                <h6>Black Plum</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png"
-                                alt=""></img>
-                                <h6>Custard Apple</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-14.png"
-                                alt=""></img>
-                                <h6>Coffe & Tea</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-15.png"
-                                alt=""></img>
-                                <h6>HeadPhone</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png"
-                                alt=""></img>
-                                <h6>Snack</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png"
-                                alt="">
-                                </img>
-                                <h6>Peach</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png"
-                                alt=""></img>
-                                <h6>Peach
+                <Swiper
+                    slidesPerView={10}
+                    spaceBetween={8}
+                    navigation={true}
+                    slidesPerGroup={3}
+                    modules={[Navigation]}
+                    className="mySwiper">
 
-                                </h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
-                                alt=""></img>
-                                <h6>Red Apple</h6>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="item text-center">
-                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
-                                alt=""></img>
-                                <h6>Red Apple</h6>
-                            </div>
-                        </SwiperSlide>
-                        
-                    </Swiper>
-\            </div>
+                    {
+                        itemBg?.map((item, index) => {
+                            return (
+                                <SwiperSlide>
+                                    <div className="item text-center" style={{background:item}}>
+                                        <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
+                                            alt=""
+                                        ></img>
+                                        <h7>Red Apple</h7>
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+
+
+
+                </Swiper>
+            </div>
         </section>
 
     )
