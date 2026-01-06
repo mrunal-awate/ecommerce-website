@@ -116,50 +116,8 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="product_row w-100 mt-4">
-                <Swiper
-                  slidesPerView={4}
-                  spaceBetween={0}
-                  navigation={true}
-                  slidesPerGroup={3}
-                  modules={[Navigation]}
-                  className="mySwiper"
-                  
-                  
-                  >
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-                  
-                  <SwiperSlide>
-                    <ProductItem></ProductItem>
-                  </SwiperSlide>
-                  
-                </Swiper>
+              <div className="product_row w-100 mt-4 d-flex">
+                <ProductItem></ProductItem>
               </div>
 
 
