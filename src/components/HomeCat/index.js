@@ -23,21 +23,21 @@ const HomeCat = () => {
                                 <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
                                 alt=""
                                 ></img>
-                                <h6>Red Apple</h6>
+                                <h7>Red Apple</h7>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="item text-center">
                                 <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png"
                                 alt=""></img>
-                                <h6>Snack</h6>
+                                <h7>Snack</h7>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="item text-center">
                                 <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png"
                                 alt=""></img>
-                                <h6>Custard Apple</h6>
+                                <h7>Custard Apple</h7>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -94,7 +94,9 @@ const HomeCat = () => {
                             <div className="item text-center">
                                 <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-11.png"
                                 alt=""></img>
-                                <h6>Peach</h6>
+                                <h6>Peach
+
+                                </h6>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>

@@ -598,7 +598,7 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   right: 10px;
 }
 
-.productItem .imgWrapper:hover img{
+.productItem:hover .imgWrapper img{
   transform: scale(1.1);
 }
 
@@ -610,11 +610,33 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   border-right: 1px solid rgba(0,0,0,0.1) !important
 }
 
+.product_row .swiper-button-prev{
+  left: 0px !important;
+}
+
+.product_row .swiper-button-next{
+  right: 0px !important;
+}
+
 .swiper{                                /* for swiper container */
-  padding-right: 1px !important;
+  padding-right: 2px !important;
 }
 
 .badge-primary{                        /* for badge color */
   background: #2bbef9 !important;
 }
 
+.homeCat{
+  padding: 35px 0px;
+}
+
+.homeCat .swiper .item{
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background: #feefea;
+}
+
+.homeCat .swiper .item img{
+  width: 80%;
+}
