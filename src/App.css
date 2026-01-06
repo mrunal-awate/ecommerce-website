@@ -469,11 +469,53 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 
 .slick-prev::before{
   content: "\f104" !important;
+} */
+
+.swiper-horizontal{
+  touch-action: pan-y;
+}
+
+.swiper{
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper{
+  padding-right: 2px !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  position: absolute;
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-family: swiper-icons;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+::after, ::before{
+  box-sizing: border-box;
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  color: #000 !important;
+  opacity: 0.8;
+  font-size: 17px !important;
+  /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 }
 
 .homeBannerSection {
   cursor: pointer;
-} */
+}
 
 
 .homeProducts{                              /* for home products section */
@@ -655,6 +697,10 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 }
 
 .homeCat .swiper-button-prev{
-  right: 100px !important;
+  right: 68px !important;
   left: inherit !important;
+}
+
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
+  font-size: 12px !important;
 }
