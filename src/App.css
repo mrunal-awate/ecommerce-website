@@ -487,9 +487,10 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   overflow: hidden;
 }
 
-.productRow .hd{                          /* for product row heading */
+.hd{                          /* for product row heading */
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .viewAllBtn{                              /* for view all button */

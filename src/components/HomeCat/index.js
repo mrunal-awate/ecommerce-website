@@ -33,6 +33,7 @@ const HomeCat = () => {
 
         <section className="homeCat">
             <div className="container">
+                <h3 className="mb-4 hd">Featured Categories</h3>
 
                 <Swiper
                     slidesPerView={10}
@@ -46,7 +47,7 @@ const HomeCat = () => {
                         itemBg?.map((item, index) => {
                             return (
                                 <SwiperSlide>
-                                    <div className="item text-center" style={{background:item}}>
+                                    <div className="item text-center cursor" style={{background:item}}>
                                         <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-9.png"
                                             alt=""
                                         ></img>
