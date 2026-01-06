@@ -8,7 +8,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
-body {font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8);}
+body {font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8); overflow-x: hidden;}
 
 .bg-blue{background: #233a95;}    /* This is for the background color of covid 19 page */
 
@@ -406,7 +406,8 @@ nav .navPart2 ul li .submenu a button{
   justify-content: flex-start !important;
   border-radius: 0px !important;
   text-transform: capitalize !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
+  color: #373737 !important;
 }
 
 nav .navPart2 ul li .submenu a button:hover{
@@ -707,9 +708,11 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 
 .productRow2{
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .productRow2 .productItem{
-  width: 25%;
+  width: 23%;
   overflow: hidden;
+  border-right: 1px solid rgba(0,0,0,0.1) !important;
 }
