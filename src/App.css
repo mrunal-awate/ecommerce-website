@@ -704,3 +704,12 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 .homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
   font-size: 12px !important;
 }
+
+.productRow2{
+  flex-wrap: wrap;
+}
+
+.productRow2 .productItem{
+  width: 25%;
+  overflow: hidden;
+}

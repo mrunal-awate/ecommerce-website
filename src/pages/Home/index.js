@@ -116,7 +116,14 @@ const Home = () => {
                 </Button>
               </div>
 
-              <div className="product_row w-100 mt-4 d-flex">
+              <div className="product_row productRow2 w-100 mt-4 d-flex">
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
+                <ProductItem></ProductItem>
                 <ProductItem></ProductItem>
               </div>
 
