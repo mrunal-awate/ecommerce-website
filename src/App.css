@@ -465,13 +465,13 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 
 /* .slick-next::before{
   content: "\f105" !important;
-} */
+} 
 
-/* .slick-prev::before{
+.slick-prev::before{
   content: "\f104" !important;
-} */
+}
 
-/* .homeBannerSection {
+.homeBannerSection {
   cursor: pointer;
 } */
 
@@ -631,6 +631,10 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   padding: 35px 0px;
 }
 
+.homeCat .swiper{
+  overflow: inherit !important;
+}
+
 .homeCat .swiper .item{
   padding: 15px;
   width: 100%;
@@ -641,4 +645,16 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
 
 .homeCat .swiper .item img{
   width: 80%;
+}
+
+
+.homeCat .swiper-button-prev, .homeCat .swiper-button-next{
+  top: -30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.homeCat .swiper-button-prev{
+  right: 100px !important;
+  left: inherit !important;
 }
