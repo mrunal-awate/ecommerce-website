@@ -697,7 +697,7 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   height: 30px !important;
 }
 
-.homeCat .swiper-button-prev{
+.homeCat .swiper-button-prev{                               /* This is for featured categories prev and next button*/
   right: 68px !important;
   left: inherit !important;
 }
