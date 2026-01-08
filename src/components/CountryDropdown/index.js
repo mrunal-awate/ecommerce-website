@@ -20,7 +20,7 @@ const CountryDropdown = () => {
 
     const [countryList, setCountryList] = useState([]);                        /*for country list*/
 
-    const context = useContext(MyContext);
+    const context = useContext(MyContext);                                     
 
     const selectCountry = (index, country) => {
         setselectedTab(index);
@@ -43,9 +43,6 @@ const CountryDropdown = () => {
         } else {
             setCountryList(context.countryList);
         }
-
-
-
 
     }
 
@@ -83,10 +80,6 @@ const CountryDropdown = () => {
                     }
 
                 </ul>
-
-
-
-
 
 
             </Dialog>

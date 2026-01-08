@@ -702,16 +702,16 @@ nav .navPart2 ul li:hover .submenu{                 /*for category tab list item
   left: inherit !important;
 }
 
-.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{
+.homeCat .swiper-button-prev::after, .homeCat .swiper-button-next::after{                /* for swiper  */
   font-size: 12px !important;
 }
 
-.productRow2{
-  flex-wrap: wrap;
+.productRow2{                                                                       /* For product2 */                                                                                                   
+  flex-wrap: wrap;                                          
   gap: 10px;
 }
 
-.productRow2 .productItem{
+.productRow2 .productItem{                                                            /*  for product2 item */
   width: 23%;
   overflow: hidden;
   border-right: 1px solid rgba(0,0,0,0.1) !important;
