@@ -7,7 +7,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 
 const ProductItem = () =>{
     return(
-        <div className="item productItem">
+        <div className="item productItem">                            // productItem
                       <div className="imgWrapper">
                         <img
                           src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
@@ -47,4 +47,4 @@ const ProductItem = () =>{
     )
 }
 
-export default ProductItem
+export default ProductItem                  // ProductItem
