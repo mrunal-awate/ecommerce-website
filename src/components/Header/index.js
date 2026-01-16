@@ -13,7 +13,7 @@ import { MyContext } from '../../App';
 
 const Header = () => {
 
-    const context = useContext(MyContext);
+    const context = useContext(MyContext);                      // MyContext
 
 
     return (
@@ -58,7 +58,7 @@ const Header = () => {
 
                 </header>
 
-                <Navigation></Navigation>
+                <Navigation></Navigation>                        // Navigation
 
 
             </div>

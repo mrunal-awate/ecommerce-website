@@ -1,10 +1,10 @@
-// import React from "react";
-// import Slider from "react-slick";
+import React from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const HomeBanner = () => {
+const HomeBanner = () => {                        // HomeBanner
   var settings = {
     dots: false,
     infinite: true,
@@ -15,7 +15,7 @@ const HomeBanner = () => {
     autoplay: true,
   };
   return (
-    <div className="homeBannerSection">
+    <div className="homeBannerSection">                        // homeBannerSection       
       <Slider {...settings}>
         {
           <div className="item">
