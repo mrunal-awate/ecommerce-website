@@ -4,7 +4,7 @@ import { IoIosSearch } from 'react-icons/io';
 
 
 
-const SearchBox = () => {
+const SearchBox = () => {                                   // SearchBox
 
     return (
         <div className='headerSearch ml-3 mr-3' >
