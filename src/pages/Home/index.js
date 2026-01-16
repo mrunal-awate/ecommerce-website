@@ -25,7 +25,7 @@ const Home = () => {
       <HomeBanner></HomeBanner>
       <HomeCat></HomeCat>
 
-      <section className="homeProducts">
+      <section className="homeProducts">                    //homeProducts
         <div className="container">
           <div className="row">
             <div className="col-md-3">
